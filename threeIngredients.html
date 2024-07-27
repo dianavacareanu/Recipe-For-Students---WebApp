@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3 Ingredients Recipes - Student Recipe Ideas</title>
+    <link rel="stylesheet" href="styles.css">
+    
+</head>
+<body class="page1">
+    <header>
+        <h1>Student Recipe Ideas</h1>
+        <nav>
+            <ul class="nav-menu">
+                <li ><a href="homepage.html" class="nav-menu__link">Home</a></li>
+                <li ><a href="15MinRecipes.html" class="nav-menu__link">15 Minutes Recipes</a></li>
+                <li><a href="threeIngredients.html" class="nav-menu__link">3 Ingredients</a></li>
+                <li><a href="submit.php" class="nav-menu__link">Submit Recipe</a></li>
+                <li><a href="index.php" class="nav-menu__link">Kitchen Utensils List</a></li>
+                <li><a href="login.php" class="nav-menu__link">LogIn</a></li>
+                <li><a href="register.php" class="nav-menu__link">Register</a></li>
+         </ul>
+        </nav>
+    </header>
+
+    <main class="main-content">
+        <section id="3-ingredients" class="recipe-section">
+            <h2 class="recipe-title-page1">3 Ingredients Recipes</h2>
+            
+            <!-- Recipe 1 -->
+            <article class="recipe-article-page1">
+                <h3 class="recipe-subtitle-page1">Simple Omelette</h3>
+                <img src="images/image1.jpg" alt="Omelette" class="recipe-image-page1">
+                <div class="ingredient-search">
+                    <input type="text" id="ingredient-search1" onkeyup="searchIngredients('ingredient-table1', 'ingredient-search1')" placeholder="Search ingredients...">
+                </div>
+                <table id="ingredient-table1" class="recipe-table-page1">
+                    <tr>
+                        <th>Ingredients</th>
+                        <th>Instructions</th> <!-- New column for instructions -->
+                    </tr>
+                    <tr>
+                        <td>Eggs</td>
+                        <td>
+                            <!-- Nested table for instructions -->
+                            <table>
+                                <tr>
+                                    <td>1</td>
+                                    <td>Whisk eggs in a bowl and season with salt and pepper.</td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Cheese</td>
+                        <td>
+                            <!-- Nested table for instructions -->
+                            <table>
+                                <tr>
+                                    <td>2</td>
+                                    <td>Add cheese on one side of the omelette.</td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Spinach</td>
+                        <td>
+                            <!-- Nested table for instructions -->
+                            <table>
+                                <tr>
+                                    <td>3</td>
+                                    <td>Add spinach on the same side of the omelette as cheese.</td>
+                                </tr>
+                                <tr>
+                                    <td>4</td>
+                                    <td>Fold the omelette in half and cook until set and golden brown.</td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                </table>
+            </article>
+            
+
+            <!-- Recipe 2 -->
+            <article class="recipe-article-page1">
+                <h3 class="recipe-subtitle-page1">Avocado Toast</h3>
+                <img src="images/joseph-gonzalez-fdlZBWIP0aM-unsplash.jpg" alt="Avocado Toast" class="recipe-image-page1">
+                <div class="ingredient-search">
+                    <input type="text" id="ingredient-search2" onkeyup="searchIngredients('ingredient-table2', 'ingredient-search2')" placeholder="Search ingredients...">
+                </div>
+                <table id="ingredient-table2" class="recipe-table-page1">
+                    <tr>
+                        <th>Ingredients</th>
+                        <th>Instructions</th> <!-- New column for instructions -->
+                    </tr>
+                    <tr>
+                        <td>Bread</td>
+                        <td>
+                            <!-- Nested table for instructions -->
+                            <table>
+                                <tr>
+                                    <td>1</td>
+                                    <td>Toast bread until golden brown.</td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Avocado</td>
+                        <td>
+                            <!-- Nested table for instructions -->
+                            <table>
+                                <tr>
+                                    <td>2</td>
+                                    <td>Smash avocado onto the toasted bread.</td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Salt</td>
+                        <td>
+                            <!-- Nested table for instructions -->
+                            <table>
+                                <tr>
+                                    <td>3</td>
+                                    <td>Sprinkle with salt to taste.</td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                </table>
+            </article>
+            
+            
+
+            <!-- Recipe 3 -->
+            <article class="recipe-article-page1">
+                <h3 class="recipe-subtitle-page1">Banana Pancakes</h3>
+                <img src="images/joseph-gonzalez-zcUgjyqEwe8-unsplash.jpg" alt="Banana Pancakes" class="recipe-image-page1">
+                <div class="ingredient-search">
+                    <input type="text" id="ingredient-search3" onkeyup="searchIngredients('ingredient-table3', 'ingredient-search3')" placeholder="Search ingredients...">
+                </div>
+                <table id="ingredient-table3" class="recipe-table-page1">
+                    <tr>
+                        <th>Ingredients</th>
+                        <th>Instructions</th>
+                    </tr>
+                    <tr>
+                        <td>
+                            Bananas
+                            
+                        </td>
+                        <td>
+                            <table>
+                                <tr>
+                                    <td>1</td>
+                                    <td>Mash bananas until smooth</td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td>Add eggs and baking powder, mix well</td>
+                                </tr>
+                                <tr>
+                                    <td>3</td>
+                                    <td>Pour batter onto skillet, cook until golden brown</td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Eggs</td>
+                        <td>
+                            <table><tr> <td>1</td>
+                                <td>Crack eggs into a bowl</td>  </tr> 
+                                <tr> <td>2</td>
+                                    <td>Beat eggs until well mixed</td> </tr>
+    
+                                <tr>
+                                    <td>3</td>
+                                    <td>Use in recipe as needed.</td>
+                                </tr></table>
+                                
+                            
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Baking Powder</td>
+                        <td><table><tr> <td>1</td>
+                            <td>Measure baking powder according to recipe</td>  </tr> 
+                            <tr> <td>2</td>
+                                <td> Add to dry ingredients</td> </tr>
+
+                            <tr>
+                                <td>3</td>
+                                <td> Mix thoroughly before using</td>
+                            </tr></table>
+                            
+                            
+                            
+                    
+                    </tr>
+                </table>
+            </article>
+            
+            
+        </section>
+    </main>
+
+    <footer class="footer-page1">
+        <p>&copy; 2024 Student Recipe Ideas</p>
+    </footer>
+    <script>
+        // JavaScript for searching keywords in table
+        function searchIngredients(tableId, searchId) {
+            var input, filter, table, tr, td, i, txtValue;
+            input = document.getElementById(searchId);
+            filter = input.value.toUpperCase();
+            table = document.getElementById(tableId);
+            tr = table.getElementsByTagName("tr");
+            for (i = 0; i < tr.length; i++) {
+                td = tr[i].getElementsByTagName("td")[0]; // Change index as per the column to search
+                if (td) {
+                    txtValue = td.textContent || td.innerText;
+                    if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                        tr[i].style.display = "";
+                    } else {
+                        tr[i].style.display = "none";
+                    }
+                }
+            }
+        }
+    </script>
+</body>
+</html>

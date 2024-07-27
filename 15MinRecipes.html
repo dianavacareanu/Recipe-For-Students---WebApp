@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>15 Minutes Recipes - Student Recipe Ideas</title>
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+<body class="page2">
+    <header>
+        <h1>Student Recipe Ideas</h1>
+        <nav>
+            <ul class="nav-menu">
+                    <li ><a href="homepage.html" class="nav-menu__link">Home</a></li>
+                    <li ><a href="15MinRecipes.html" class="nav-menu__link">15 Minutes Recipes</a></li>
+                    <li><a href="threeIngredients.html" class="nav-menu__link">3 Ingredients</a></li>
+                    <li><a href="submit.php" class="nav-menu__link">Submit Recipe</a></li>
+                    <li><a href="index.php" class="nav-menu__link">Kitchen Utensils List</a></li>
+                    <li><a href="login.php" class="nav-menu__link">LogIn</a></li>
+                    <li><a href="register.php" class="nav-menu__link">Register</a></li>
+             </ul>
+        </nav>
+    </header>
+
+    <main class="main-content">
+        <section id="15-min-recipes" class="recipe-section">
+            <h2>15 Minutes Recipes</h2>
+            <div class="recipe15min-container">
+                <ol id="recipes-list">
+                    <li class="recipe15min">
+                        <img src="images/tim-cooper-1R7iHPt63Lc-unsplash.jpg" alt="Spaghetti with Olives" onclick="showImagePopup(this.src)">
+                        <h3>Dirty Martini Pasta</h3>
+                        <div class="recipe15min-details" id="details-0">
+                            
+                            <p>
+                                This recipe takes inspiration from a classic pasta al limone by using heavy cream as the base for the luscious and decadent sauce. And, just like a dirty martini, we supplement the dish with olives and brine (and booze, of course). The best part? It comes together in under 30 minutes.
+                            </p>
+                        </div>
+                        <p>
+                            <span class="show-more" onclick="toggleDetails(0)">View more</span>
+                        </p>
+                    </li>
+                    <li class="recipe15min">
+                        <img src="images/anh-nguyen-kcA-c3f_3FE-unsplash.jpg" alt="Penne Alla Vodka" onclick="showImagePopup(this.src)">
+                        <h3>Penne Alla Vodka</h3>
+                        <div class="recipe15min-details" id="details-1">
+                            <p>
+                                This is the best creamy and bright vodka sauce any of us in the test kitchen have ever had. The secret? Tomato paste. Tomato paste has a more concentrated flavor, and texture-wise, it makes for a smoother, almost velvety sauce your date will love.
+                            </p>
+                        </div>
+                        <p>
+                            <span class="show-more" onclick="toggleDetails(1)">View more</span>
+                        </p>
+                    </li>
+                </ol>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer-page1">
+        <p>&copy; 2024 Student Recipe Ideas</p>
+    </footer>
+    <script>
+        function showImagePopup(imageSrc) {
+            // Create a modal element
+            var modal = document.createElement('div');
+            modal.className = 'modal';
+            modal.innerHTML = `
+                <span class="close" onclick="closeImagePopup()">&times;</span>
+                <img class="modal-content" src="${imageSrc}" alt="Expanded Image">
+            `;
+            document.body.appendChild(modal);
+
+            // Display the modal
+            modal.style.display = 'block';
+        }
+
+        function closeImagePopup() {
+            // Close the modal
+            var modal = document.querySelector('.modal');
+            if (modal) {
+                modal.style.display = 'none';
+                modal.remove();
+            }
+        }
+
+        function toggleDetails(recipeId) {
+            const detailsId = "details-" + recipeId;
+            const detailsContent = document.getElementById(detailsId);
+            if (detailsContent.style.display === "none" || detailsContent.style.display === "") {
+                detailsContent.style.display = "block";
+            } else {
+                detailsContent.style.display = "none";
+            }
+        }
+    </script>
+</body>
+</html>
