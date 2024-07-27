@@ -6,7 +6,7 @@ This project is a recipe website designed for students. It includes functionalit
 
 Features
 
-Four Pages: Includes a menu, header, content, and footer.
+Pages: Includes a menu, header, content, and footer.
 Registration Page: Allows new users to create an account.
 Login Page: Provides access for registered users.
 CRUD Operations: Manage recipes in a database.
